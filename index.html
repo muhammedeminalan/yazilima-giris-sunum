@@ -238,12 +238,21 @@
         
         .section-body div[class*="absolute"],
         .section-body div[class*="fixed"] {
-            position: relative !important;
+            position: static !important;
         }
         
         .section-body div[class*="inset"] {
-            position: relative !important;
+            position: static !important;
             inset: auto !important;
+        }
+        
+        .section-body .slide {
+            height: auto !important;
+            min-height: auto !important;
+        }
+        
+        .section-body * {
+            max-width: 100% !important;
         }
         
         .scroll-top {
